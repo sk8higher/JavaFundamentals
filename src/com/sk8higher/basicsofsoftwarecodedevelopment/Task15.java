@@ -11,10 +11,12 @@ public class Task15 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int inputSeconds = scanner.nextInt();
-        int hours = inputSeconds / 3600;
-        int minutes = (inputSeconds - hours * 3600) / 60;
-        int seconds = inputSeconds - hours * 3600 - minutes * 60;
+        System.out.print("Enter seconds: ");
+
+        int t = scanner.nextInt();
+        int hours = t / 3600;
+        int minutes = (t - hours * 3600) / 60;
+        int seconds = t - hours * 3600 - minutes * 60;
 
         System.out.printf("%02dч %02dмин %02dс", hours, minutes, seconds);
 
