@@ -14,9 +14,15 @@ public class Task31 {
         System.out.print("Enter a number: ");
         int n = scanner.nextInt();
 
-        int sum = (n * (n + 1)) / 2;
+        int sum = 0;
 
-        System.out.print("Sum between 1 and n is " + sum);
+        for(int i = 1; i <= n; i++) {
+            sum += i;
+        }
+
+//      int sum = (n * (n + 1)) / 2;      works faster
+
+        System.out.print("Sum between 1 and " + n + " is " + sum);
 
         scanner.close();
     }
